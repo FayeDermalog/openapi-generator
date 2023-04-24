@@ -260,6 +260,7 @@ public class SpringCodegen extends AbstractJavaCodegen
         cliOptions.add(CliOption.newBoolean(GENERATE_CONSTRUCTOR_WITH_REQUIRED_ARGS,
             "Whether to generate constructors with required args for models",
             generatedConstructorWithRequiredArgs));
+        cliOptions.add(new CliOption(CodegenConstants.API_NAME_PREFIX, CodegenConstants.API_NAME_PREFIX_DESC));
 
         supportedLibraries.put(SPRING_BOOT, "Spring-boot Server application.");
         supportedLibraries.put(SPRING_CLOUD_LIBRARY,
